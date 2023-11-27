@@ -75,10 +75,8 @@ l=1000;
 e=np.zeros(int(L/l), dtype=float);
 for i in range(0,int(L/l)):
     win=range(i*l*365,(i+1)*l*365)
-    print((win))
     a=max(rj[win])
     b=min(rj[win])
-    print(a,b)
     e[i]=1-2/(a/b+1)
 
 fig=plt.figure(1,figsize=(12,5))
